@@ -1,4 +1,4 @@
-# ad-url-generator #
+# Produktlenke generator #
 
 [See demo](http://gerhardsletten.github.io/react-responsive-dropdown/)
 
