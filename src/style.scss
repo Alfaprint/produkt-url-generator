@@ -1,0 +1,28 @@
+@import "./theme";
+
+$grey: #999;
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $grey;
+}
+
+td {
+  padding: 4px;
+  border: 1px solid $grey;
+  font-size: .8em;
+  img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+  }
+}
