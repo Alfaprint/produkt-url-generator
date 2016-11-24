@@ -27,8 +27,12 @@ const config = {
     classic: 'strykbara'
   }),
   'www.identiketter.dk': Object.assign({}, defaultConfig, {
-    color: 'bestilling',
-    classic: 'strygbare'
+    color: 'navnemaerker',
+    classic: 'strygbare-navnemaerker',
+    disney: 'disney-navnemaerker',
+    starwars: 'starwars-navnemaerker',
+    spiderman: 'spiderman-navnemaerker',
+    helloKitty: 'hello-kitty-navnemaerker'
   }),
   'www.namensetiketten.de': Object.assign({}, defaultConfig, {
     color: 'bestellen',
