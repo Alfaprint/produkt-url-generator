@@ -23,8 +23,12 @@ const config = {
     classic: 'pastrykbare'
   }),
   'www.namnlappar.se': Object.assign({}, defaultConfig, {
-    color: 'bestaell',
-    classic: 'strykbara'
+    color: 'namnlappar',
+    classic: 'strykbara-namnlappar',
+    disney: 'disney-namnlappar',
+    starwars: 'star-wars-namnlappar',
+    spiderman: 'spider-man-namnlappar',
+    helloKitty: 'hello-kitty-namnlappar'
   }),
   'www.identiketter.dk': Object.assign({}, defaultConfig, {
     color: 'navnemaerker',
@@ -35,8 +39,16 @@ const config = {
     helloKitty: 'hello-kitty-navnemaerker'
   }),
   'www.namensetiketten.de': Object.assign({}, defaultConfig, {
-    color: 'bestellen',
+    color: 'namensaufkleber',
+    helloKitty: 'hello-kitty-namensaufkleber',
     classic: 'buegeletiketten'
+  }),
+  'www.ikioma.fi': Object.assign({}, defaultConfig, {
+    color: 'nimitarrat',
+    classic: 'silitettavat-nimilaput',
+    disney: 'disney-nimitarrat',
+    spiderman: 'spider-man-nimitarrat',
+    helloKitty: 'hello-kitty-nimitarrat'
   })
 }
 
