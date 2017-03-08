@@ -19,8 +19,12 @@ const defaultConfig = {
 
 const config = {
   'www.navnelapper.no': Object.assign({}, defaultConfig, {
-    color: 'bestill',
-    classic: 'pastrykbare'
+    color: 'navnelapper',
+    classic: 'pastrykbare-navnelapper',
+    disney: 'disney-navnelapper',
+    starwars: 'starwars-navnelapper',
+    spiderman: 'spiderman-navnelapper',
+    helloKitty: 'hello-kitty-navnelapper'
   }),
   'www.namnlappar.se': Object.assign({}, defaultConfig, {
     color: 'namnlappar',
