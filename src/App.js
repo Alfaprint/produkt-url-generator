@@ -14,7 +14,8 @@ const defaultConfig = {
   disney: 'disney',
   starwars: 'starwars',
   spiderman: 'spiderman',
-  helloKitty: 'hello-kitty'
+  helloKitty: 'hello-kitty',
+  elias: 'elias-navnelapper'
 }
 
 const config = {
@@ -45,7 +46,10 @@ const config = {
   'www.namensetiketten.de': Object.assign({}, defaultConfig, {
     color: 'namensaufkleber',
     helloKitty: 'hello-kitty-namensaufkleber',
-    classic: 'buegeletiketten'
+    classic: 'buegeletiketten',
+    disney: 'disney-namensaufkleber',
+    starwars: 'star-wars-namensaufkleber',
+    spiderman: 'spider-man-namensaufkleber'
   }),
   'www.ikioma.fi': Object.assign({}, defaultConfig, {
     color: 'nimitarrat',
@@ -67,12 +71,14 @@ const licence = {
   MS: ['spiderman', 'spidergirl', 'webwarriors'],
   HK: ['classic', 'pink', 'sporty', 'winter'],
   SW: ['luke', 'leia', 'yoda', 'han_solo', 'c3po_r2d2', 'dark_side', 'mix'],
-  SWX: ['ezra', 'kanan', 'sabine', 'troopers', 'swr']
+  SWX: ['ezra', 'kanan', 'sabine', 'troopers', 'swr'],
+  DV: ['vaiana-1', 'vaiana-2', 'vaiana-3', 'mix', 'maui-1', 'maui-2', 'maui-3'],
+  E: ['elias', 'eliasmix']
 }
 
 const licenceTypes = [{
   type: 'disney',
-  keys: ['DF', 'DP', 'DMF', 'DC', 'DWTP', 'DPL', 'DMU']
+  keys: ['DF', 'DP', 'DMF', 'DC', 'DWTP', 'DPL', 'DMU', 'DV']
 }, {
   type: 'starwars',
   keys: ['SW', 'SWX']
@@ -82,6 +88,9 @@ const licenceTypes = [{
 }, {
   type: 'helloKitty',
   keys: ['HK']
+}, {
+  type: 'elias',
+  keys: ['E']
 }]
 
 export default class App extends Component {
