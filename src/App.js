@@ -9,13 +9,14 @@ const STORAGE_KEY = 'nametagsdata'
 const storage = global.localStorage
 
 const defaultConfig = {
-  color: 'bestill',
+  color: 'navnelapper',
   classic: 'pastrykbare',
   disney: 'disney',
   starwars: 'starwars',
   spiderman: 'spiderman',
   helloKitty: 'hello-kitty',
-  elias: 'elias-navnelapper'
+  elias: 'elias-navnelapper',
+  mummi: 'mummi-navnelapper'
 }
 
 const config = {
@@ -25,7 +26,8 @@ const config = {
     disney: 'disney-navnelapper',
     starwars: 'starwars-navnelapper',
     spiderman: 'spiderman-navnelapper',
-    helloKitty: 'hello-kitty-navnelapper'
+    helloKitty: 'hello-kitty-navnelapper',
+    mummi: 'mummi-navnelapper'
   }),
   'www.namnlappar.se': Object.assign({}, defaultConfig, {
     color: 'namnlappar',
@@ -33,7 +35,8 @@ const config = {
     disney: 'disney-namnlappar',
     starwars: 'star-wars-namnlappar',
     spiderman: 'spider-man-namnlappar',
-    helloKitty: 'hello-kitty-namnlappar'
+    helloKitty: 'hello-kitty-namnlappar',
+    mummi: 'mumintrollen-namnlappar'
   }),
   'www.identiketter.dk': Object.assign({}, defaultConfig, {
     color: 'navnemaerker',
@@ -41,7 +44,8 @@ const config = {
     disney: 'disney-navnemaerker',
     starwars: 'starwars-navnemaerker',
     spiderman: 'spiderman-navnemaerker',
-    helloKitty: 'hello-kitty-navnemaerker'
+    helloKitty: 'hello-kitty-navnemaerker',
+    mummi: 'mumitroldene-navnemaerker'
   }),
   'www.namensetiketten.de': Object.assign({}, defaultConfig, {
     color: 'namensaufkleber',
@@ -49,14 +53,16 @@ const config = {
     classic: 'buegeletiketten',
     disney: 'disney-namensaufkleber',
     starwars: 'star-wars-namensaufkleber',
-    spiderman: 'spider-man-namensaufkleber'
+    spiderman: 'spider-man-namensaufkleber',
+    mummi: 'moomin-namensaufkleber'
   }),
   'www.ikioma.fi': Object.assign({}, defaultConfig, {
     color: 'nimitarrat',
     classic: 'silitettavat-nimilaput',
     disney: 'disney-nimitarrat',
     spiderman: 'spider-man-nimitarrat',
-    helloKitty: 'hello-kitty-nimitarrat'
+    helloKitty: 'hello-kitty-nimitarrat',
+    mummi: 'muumi-nimitarrat'
   })
 }
 
@@ -73,7 +79,8 @@ const licence = {
   SW: ['luke', 'leia', 'yoda', 'han_solo', 'c3po_r2d2', 'dark_side', 'mix'],
   SWX: ['ezra', 'kanan', 'sabine', 'troopers', 'swr'],
   DV: ['vaiana-1', 'vaiana-2', 'vaiana-3', 'mix', 'maui-1', 'maui-2', 'maui-3'],
-  E: ['elias', 'eliasmix']
+  E: ['elias', 'eliasmix'],
+  MOO: ['moomintroll', 'moomintroll', 'little-my', 'snork-maiden', 'snufkin', 'moominhouse', 'too-ticky', 'moominfriends']
 }
 
 const licenceTypes = [{
@@ -91,6 +98,9 @@ const licenceTypes = [{
 }, {
   type: 'elias',
   keys: ['E']
+}, {
+  type: 'mummi',
+  keys: ['MOO']
 }]
 
 export default class App extends Component {
@@ -156,6 +166,8 @@ export default class App extends Component {
       case 'starwars':
       case 'spiderman':
       case 'helloKitty':
+      case 'elias':
+      case 'mummi':
         return {
           themeGroupId: obj.themeID,
           themeId: licence[obj.themeID][obj.charID - 1]
